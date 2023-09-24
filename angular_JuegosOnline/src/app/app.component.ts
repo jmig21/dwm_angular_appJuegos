@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
   }
 
   getGameData(): void {
+    
     return this.gameService.getGameData().subscribe((games:any) => this.games = games )
   }
 }
