@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { GetGameDataService } from '../services/get-game-data.service';
 
 @Component({
   selector: 'app-games-list',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class GamesListComponent {
 
+  game: any;
+  @Input() games: any;
 }

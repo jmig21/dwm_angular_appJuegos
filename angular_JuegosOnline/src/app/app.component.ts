@@ -7,7 +7,7 @@ import { GetGameDataService } from './services/get-game-data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'angular_JuegosOnline';
+  title = 'Angular_JuegosOnline';
 
   constructor( private gameService: GetGameDataService) {
     
@@ -19,9 +19,8 @@ export class AppComponent implements OnInit {
     this.getGameData();
   }
 
-  getGameData(): void {
+  getGameData(): any {
     
     return this.gameService.getGameData().subscribe((games:any) => this.games = games )
   }
 }
-

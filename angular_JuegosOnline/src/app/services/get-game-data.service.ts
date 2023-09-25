@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of, tap } from 'rxjs';
 
 
 @Injectable({
@@ -15,7 +15,8 @@ export class GetGameDataService {
   private apyKey = '882662ee873446718ae2ba2a4f6b573f';
 
 
-  getGameData():any {
+  public getGameData(): Observable<any> {
     return this.http.get<any>(this.gamesData +'?key=' + this.apyKey)
   }
+
 }
