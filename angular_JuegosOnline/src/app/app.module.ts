@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { GamesListComponent } from './games-list/games-list.component';
 import { GameComponent } from './game/game.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
 
@@ -13,7 +14,8 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     GamesListComponent,
     GameComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     HttpClientModule,
