@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { FormsModule } from '@angular/forms';
+import { MenuNavegacionComponent } from './menu-navegacion/menu-navegacion.component';
 
 @NgModule({
 
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     GamesListComponent,
     GameComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MenuNavegacionComponent
   ],
   imports: [
     FormsModule,

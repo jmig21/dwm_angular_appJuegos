@@ -7,7 +7,7 @@ import { GetGameDataService } from './services/get-game-data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Proyecto en Angular 2023';
+  title = 'angular_JuegosOnline';
 
   constructor( private gameService: GetGameDataService) {
     
