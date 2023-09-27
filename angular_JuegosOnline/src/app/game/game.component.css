@@ -1,5 +1,6 @@
 .card{
     position: relative;
+    align-items: center;
     width: 250px;
     height: 250px;
     border: solid black 5px;
@@ -7,7 +8,7 @@
 }
 
 .cardName{
-    position: absolute;
+    position: relative;
     text-align: center;
     color: black;
     font-size: large;
@@ -19,3 +20,6 @@
     max-width: 50%;
     max-height: fit-content;
 }
+
+
+
