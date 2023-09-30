@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-modal',
@@ -6,7 +7,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent {
-  @Input() selectedGame: any;
-  @Output() closeGame = new EventEmitter<void>();
-}
+  @ViewChild('myModal') modalContent!: any; // ViewChild para obtener una referencia al contenido del modal
 
+  constructor(private modalService: NgbModal) { }
+
+  mostrarModal() {
+    this.modalService.open(this.modalContent, { centered: true });
+  }
+}

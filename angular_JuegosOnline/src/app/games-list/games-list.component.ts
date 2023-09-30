@@ -11,3 +11,4 @@ export class GamesListComponent {
   game: any;
   @Input() games: any;
 }
+
