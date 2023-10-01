@@ -1,16 +1,8 @@
 <!-- modal.component.html -->
-<ng-template #myModal let-modal>
-  <div class="modal-header">
-    <h5 class="modal-title">Título del Modal</h5>
-    <button type="button" class="close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <!-- Contenido del modal -->
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Cerrar</button>
-    <button type="button" class="btn btn-primary">Guardar cambios</button>
-  </div>
-</ng-template>
+<div id="overlay" (click)="off()">
+  <p>Ejemplo uso de modal component</p>
+</div>
+
+<div style="padding:20px">
+  <button (click)="on()">Turn on modal effect</button>
+</div>

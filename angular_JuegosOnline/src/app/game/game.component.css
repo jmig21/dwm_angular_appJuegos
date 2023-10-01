@@ -2,7 +2,7 @@
     position: relative;
     align-items: center;
     width: 250px;
-    height: 250px;
+    height: 300px;
     border: solid black 5px;
     background-color: rgb(104, 135, 219);
 }
@@ -12,7 +12,7 @@
     text-align: center;
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
+    font-size: 12px;
 }
 
 .cardImg{
@@ -25,3 +25,4 @@
 .row{
     margin-inline: 15%;
 }
+
