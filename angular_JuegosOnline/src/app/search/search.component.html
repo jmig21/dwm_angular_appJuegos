@@ -1,1 +1,14 @@
-<p>search works!</p>
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Buscar..."
+    (input)="onInputChange($event)"
+  />
+  <div class="input-group-append">
+    <button class="btn btn-primary" (click)="clearSearch()">Limpiar</button>
+  </div>
+</div>
+<ul class="list-group">
+  <li *ngFor="let game of filteredGames" class="list-group-item">{{ game.name }}</li>
+</ul>

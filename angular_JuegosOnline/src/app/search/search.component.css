@@ -1,0 +1,29 @@
+/* Estilo para el contenedor principal */
+.input-group {
+    margin-bottom: 20px;
+    width: 300px; /* Ancho personalizado según tus necesidades */
+  }
+  
+  /* Estilo para el botón "Limpiar" */
+  .btn-primary {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+  }
+  
+  /* Estilo para la lista de elementos filtrados */
+  .list-group {
+    max-height: 200px; /* Altura máxima de la lista (ajusta según tus necesidades) */
+    overflow-y: auto; /* Habilita la barra de desplazamiento vertical si es necesario */
+  }
+  
+  .list-group-item {
+    cursor: pointer; /* Cambia el cursor al pasar sobre los elementos de la lista */
+  }
+  
+  /* Estilo para resaltar el término de búsqueda en los resultados */
+  .highlight {
+    background-color: yellow; /* Color de fondo de resaltado */
+    font-weight: bold; /* Texto en negrita para resaltado */
+  }
+  

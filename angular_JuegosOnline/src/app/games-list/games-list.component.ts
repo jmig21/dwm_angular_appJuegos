@@ -10,5 +10,9 @@ export class GamesListComponent {
 
   game: any;
   @Input() games: any;
+
+  @Input() filteredGames: any[] = [];
+
+  constructor() {}
 }
 
