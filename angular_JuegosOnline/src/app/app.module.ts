@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { MenuNavegacionComponent } from './menu-navegacion/menu-navegacion.component';
 import { ModalComponent } from './modal/modal.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
 
@@ -21,7 +22,8 @@ import { ModalComponent } from './modal/modal.component';
     HeaderComponent,
     FooterComponent,
     MenuNavegacionComponent,
-    ModalComponent
+    ModalComponent,
+    SearchComponent
   ],
   imports: [
     FormsModule,
