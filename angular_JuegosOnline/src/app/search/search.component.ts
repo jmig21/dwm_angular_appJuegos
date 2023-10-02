@@ -16,6 +16,7 @@ export class SearchComponent {
   }
 
   filterItems(searchTerm: string) {
+
     if (searchTerm.trim() === '') {
       this.filteredGames = this.games.results; // Mostrar todos los juegos si no hay término de búsqueda
     } else {
@@ -25,6 +26,7 @@ export class SearchComponent {
     }
   }
 
+  
   clearSearch() {
     this.filteredGames = this.games.results;
   }

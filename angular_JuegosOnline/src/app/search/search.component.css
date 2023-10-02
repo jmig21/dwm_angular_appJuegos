@@ -2,6 +2,7 @@
 .input-group {
     margin-bottom: 20px;
     width: 300px; /* Ancho personalizado según tus necesidades */
+    margin-left: 75%
   }
   
   /* Estilo para el botón "Limpiar" */
@@ -9,6 +10,7 @@
     background-color: #007bff; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
     border: none;
+    margin-left: 10%
   }
   
   /* Estilo para la lista de elementos filtrados */
